@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
-		
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap.new.css">
     <script src="assets/jquery.min.js"></script>
 	<script src="assets/billscript.js"></script>
@@ -18,7 +18,7 @@
 </head>
 
 
-<body class="container-fluid" style="background-color: #eee; font-family:";>
+<body class="container-fluid" style="background-color: #eee; font-family:Inter";>
 
     <h3>
         <center>Invoice Generator</center>
@@ -111,9 +111,8 @@
                                         name="custname" id="custname" pattern="[A-Za-z .]{2,}">
                                 </div>
                                 <div class="col-12 col-md-6 p-2"><label> Contact No. : </label>
-                                    <input class="form-control form-control-sm" type="number" min="0" max="9999999999"
-                                        placeholder="Contact number" name="custcontact" id="custcontact"
-                                        pattern="[0-9]{10}">
+                                    <input required class="form-control form-control-sm" type="number" 
+                                        placeholder="Contact number" name="custcontact" id="custcontact" pattern="[0-9]{6,}">
                                 </div>
                                 <div class="col-12 p-2"><label> Address : </label>
                                     <input class="form-control form-control-sm" type="text"
