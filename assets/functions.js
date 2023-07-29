@@ -56,7 +56,6 @@ function Selectplist() {
 		addOption(document.prodinput.plist, 'WINDOW STOPPER','WINDOW STOPPER');
 		addOption(document.prodinput.plist, 'WOOD POLISH OIL','WOOD POLISH OIL');
 		addOption(document.prodinput.plist, 'ZULA CHAIN','ZULA CHAIN');
-
     }
 	
 	
@@ -197,7 +196,7 @@ function Selectplist() {
 		addOption(document.prodinput.plist, 'WASH BASIN WASTE COUPLING','WASH BASIN WASTE COUPLING');
 		addOption(document.prodinput.plist, 'WASTE PIPE (URINALS)','WASTE PIPE (URINALS)');
 		addOption(document.prodinput.plist, 'WASTE PIPE (WASHBASIN & SINK)','WASTE PIPE (WASHBASIN & SINK)');
-}
+	}
 
     if (document.prodinput.Category.value == 'Geyser') 
 	{
@@ -296,27 +295,7 @@ function Selectplist() {
 	}
 	
 	
-    if (document.prodinput.Category.value == 'Generic') 
-	{
-		addOption(document.prodinput.plist, 'BLADE/CUTTER','BLADE/CUTTER');
-		addOption(document.prodinput.plist, 'BOLT','BOLT');
-		addOption(document.prodinput.plist, 'CLEANING BRUSH','CLEANING BRUSH');
-		addOption(document.prodinput.plist, 'M-SEAL','M-SEAL');
-		addOption(document.prodinput.plist, 'NUT','NUT');
-		addOption(document.prodinput.plist, 'NAILS - SMALL','NAILS - SMALL');
-		addOption(document.prodinput.plist, 'NAILS - LARGE','NAILS - LARGE');
-		addOption(document.prodinput.plist, 'OTHER ADHESIVES','OTHER ADHESIVES');
-		addOption(document.prodinput.plist, 'PADLOCK','PADLOCK');
-		addOption(document.prodinput.plist, 'POLISH/SAND PAPER','POLISH/SAND PAPER');
-		addOption(document.prodinput.plist, 'SCREWDRIVER','SCREWDRIVER');
-		addOption(document.prodinput.plist, 'SCREW','SCREW');
-		addOption(document.prodinput.plist, 'SUPER GLUE','SUPER GLUE');
-		addOption(document.prodinput.plist, 'TEFLON TAPE','TEFLON TAPE');
-		addOption(document.prodinput.plist, 'WALL PLUG/GITTI - PLASTIC','WALL PLUG/GITTI - PLASTIC');
-		addOption(document.prodinput.plist, 'WALL PLUG/GITTI - WOODEN','WALL PLUG/GITTI - WOODEN');
-		addOption(document.prodinput.plist, 'WD-40','WD-40');
-		addOption(document.prodinput.plist, 'ZIP TIE','ZIP TIE');
-	}
+
 	
 	if (document.prodinput.Category.value == 'Electrical') 
 	{
@@ -486,7 +465,28 @@ function Selectplist() {
 		addOption(document.prodinput.plist, 'Wrench','Wrench');
 	}
 
-
+    if (document.prodinput.Category.value == 'Generic') 
+	{
+		addOption(document.prodinput.plist, 'BLADE/CUTTER','BLADE/CUTTER');
+		addOption(document.prodinput.plist, 'BOLT','BOLT');
+		addOption(document.prodinput.plist, 'CLEANING BRUSH','CLEANING BRUSH');
+		addOption(document.prodinput.plist, 'M-SEAL','M-SEAL');
+		addOption(document.prodinput.plist, 'NUT','NUT');
+		addOption(document.prodinput.plist, 'NAILS - SMALL','NAILS - SMALL');
+		addOption(document.prodinput.plist, 'NAILS - LARGE','NAILS - LARGE');
+		addOption(document.prodinput.plist, 'OTHER ADHESIVES','OTHER ADHESIVES');
+		addOption(document.prodinput.plist, 'PADLOCK','PADLOCK');
+		addOption(document.prodinput.plist, 'POLISH/SAND PAPER','POLISH/SAND PAPER');
+		addOption(document.prodinput.plist, 'SCREWDRIVER','SCREWDRIVER');
+		addOption(document.prodinput.plist, 'SCREW','SCREW');
+		addOption(document.prodinput.plist, 'SUPER GLUE','SUPER GLUE');
+		addOption(document.prodinput.plist, 'TEFLON TAPE','TEFLON TAPE');
+		addOption(document.prodinput.plist, 'WALL PLUG/GITTI - PLASTIC','WALL PLUG/GITTI - PLASTIC');
+		addOption(document.prodinput.plist, 'WALL PLUG/GITTI - WOODEN','WALL PLUG/GITTI - WOODEN');
+		addOption(document.prodinput.plist, 'WD-40','WD-40');
+		addOption(document.prodinput.plist, 'ZIP TIE','ZIP TIE');
+	}
+	
 }
 	
 
@@ -977,16 +977,17 @@ function Selectplistedit() {
 		addOption(document.prodinputedit.plist, 'Water storage tank','Water storage tank');
 		addOption(document.prodinputedit.plist, 'Wrench','Wrench');		
 	}	
-	
 }
+
 	
-	function removeAllOptions(selectbox) {
-    var i;
-    for (i = selectbox.options.length - 1; i >= 0; i--) 
-    {
-        selectbox.remove(i);
-    }
-}
+	function removeAllOptions(selectbox) 
+	{
+		var i;
+		for (i = selectbox.options.length - 1; i >= 0; i--) 
+		{
+			selectbox.remove(i);
+		}
+	}
 
 
 function addOption(selectbox, value, text) {
